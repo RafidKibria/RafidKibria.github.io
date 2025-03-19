@@ -1,0 +1,46 @@
+img {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 100px;
+    border: solid;
+    border-color: grey;
+}
+
+body {
+    background-color: rgb(40, 40, 41);
+    background-image: url(/resources/images/lebron-background-image.jpg);
+    background-color: antiquewhite;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p, h1, h2, .achievements-list{
+    color: grey;
+    font-family: 'Montserrat', serif;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+nav ul li{
+display: inline;
+margin-right: 20px;
+color: grey;
+background-color: rgb(41, 39, 39);
+}
+
+nav ul {
+    background-color: rgb(41, 39, 39);
+}
+
+a:hover{
+    color: white;
+}
+
+a {
+    color: grey;
+}
+
+h2{
+    background-image: url(/resources/images/images\ \(3\).jpg);
+}
