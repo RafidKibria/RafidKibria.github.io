@@ -3,7 +3,7 @@ img {
     height: 200px;
     display: inline-block;
     border-radius: 100px;
-    border: solid;
+    border: dotted;
     border-color: grey;
 }
 
@@ -27,6 +27,8 @@ display: inline;
 margin-right: 20px;
 color: grey;
 background-color: rgb(41, 39, 39);
+font-family: 'Montserrat', 'serif';
+
 }
 
 nav ul {
@@ -44,3 +46,18 @@ a {
 h2{
     background-image: url(/resources/images/images\ \(3\).jpg);
 }
+
+.lebron-clicker-image {
+    border: none;
+    display: block;
+    margin: auto;
+    margin-top: 350px;
+}
+
+.lebron-pts {
+    position: absolute;
+    top: 575px;
+    left: 875px;
+}
+
+
