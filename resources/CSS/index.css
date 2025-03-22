@@ -15,6 +15,11 @@ body {
     background-size: cover;
 }
 
+.lebron-clicker-body{
+    background-image: none;
+    background-color: black;
+}
+
 p, h1, h2, .achievements-list{
     color: grey;
     font-family: 'Montserrat', serif;
@@ -51,13 +56,10 @@ h2{
     border: none;
     display: block;
     margin: auto;
-    margin-top: 350px;
 }
 
 .lebron-pts {
-    position: absolute;
-    top: 575px;
-    left: 875px;
+    text-align: center;
 }
 
 

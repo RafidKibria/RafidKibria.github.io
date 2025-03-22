@@ -1,7 +1,8 @@
-const points = document.getElementById('lebron-pts').innerHTML
-
-function feedLebron() {
+let points = 0;
+function feedLebron(){
     points += 1;
+    
+    document.getElementById('lebron-pts').innerText = points;
 }
 
-document.getElementById.addEventListener(onclick, feedLebron);
+document.getElementById('lebron-clicker-image').addEventListener("click", feedLebron);
