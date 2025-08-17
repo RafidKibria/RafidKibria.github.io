@@ -1,0 +1,160 @@
+body {
+    background-image: url(../purple-background-wallpaperaccess.png);
+    background-size: cover;
+}
+
+.clicker-image-div img {
+    width: 150px;
+    height: 150px;
+}
+
+.clicker-image-div p {
+    color: yellow;
+}
+
+.michroma-regular {
+    font-family: "Michroma", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.shop-section {
+    border: 5px solid;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background: #B27BE0;
+    background: linear-gradient(135deg, #B27BE0, #390975);
+    border-image: url(../border-images/rough-metal-texture.1200x.png);
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.shop-section::-webkit-scrollbar {
+    display: none;
+}
+
+.shop-section h1 {
+    font-family: "Michroma", sans-serif;
+    color: yellow;
+    font-size: 20px;
+}
+
+.shop-section button {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(137, 70, 163);
+    border: 1px solid rgb(255, 238, 0);
+    border-radius: 3px;
+}
+
+.shop-section button:hover {
+    background-color: rgb(146, 101, 172);
+}
+
+.cursor-button {
+    background-image: url(../button-images/Cursor\ Button\ Background\ Image.png);
+}
+
+.basketball-button {
+    background-image: url(../button-images/Basketball-button-background-picture.png);
+}
+
+.farm-button {
+    background-image: url(../button-images/farm-button-background-picture.png);
+}
+
+.mine-button {
+    background-image: url(../button-images/mine-button-background-picture.png);
+}
+
+.factory-button {
+    background-image: url(../button-images/factory-button-background-image.png);
+}
+
+.bank-button {
+    background-image: url(../button-images/bank-button-background-image.png);
+}
+
+.temple-button {
+    background-image: url(../button-images/temple-button-background-image.png);
+}
+
+.wizard-button {
+    background-image: url(../button-images/wizard-button-background-image.png);
+}
+
+.shipment-button {
+    background-image: url(../button-images/shipment-button-background-image.png);
+}
+
+.alchemy-button {
+    background-image: url(../button-images/alchemy-button-background-image.png);
+}
+
+.portal-button {
+    background-image: url(../button-images/portal-button-background-image.png);
+}
+
+.timemachine-button {
+    background-image: url(../button-images/timemachine-button-background-image.png);
+}
+
+.condenser-button {
+    background-image: url(../button-images/condenser-button-background-image.png);
+}
+
+.prism-button {
+    background-image: url(../button-images/prism-button-background-image.png);
+}
+
+.button-name {
+    font-family: "Michroma", sans-serif;
+    font-weight: 600;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 14px;
+}
+
+.button-price {
+    font-family: "Michroma", sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    font-size: 10px;
+    color: lime;
+}
+
+.button-quantity {
+    font-family: "Michroma", sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.upgrades-section {
+    border: 5px solid;
+    position: absolute;
+    top: 0;
+    right: 210px;
+    width: 200px;
+    height: 100vh;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+        radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    border-image: url(../border-images/rough-metal-texture.1200x.png);
+}
+
+.upgrades-section h1 {
+    font-family: "Michroma", sans-serif;
+    color: rgb(74, 0, 192);
+    font-size: 20px;
+}

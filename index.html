@@ -1,11 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/styles/styles.css">
     <title>Lebron Clicker</title>
 </head>
 <body>
-    
+    <div class="clicker-image-div">
+        <img id="clicker-image" src="resources/game-images/lebron-james-clicker-image.png" alt=""/>
+        <p class="michroma-regular">Le'Coins: <span id="coins-display">0</span></p>
+    </div>
+
+    <div class="shop-section">
+        <h1>Shop</h1>
+
+    <button class="cursor-button" id="cursor-button">
+        <div class="button-name">Le'Cursor</div>
+        <span id="cursor-price" class="button-price"></span>
+        <span id="cursor-quantity" class="button-quantity"></span>
+    </button>
+    <button class="basketball-button" id="basketball-button">
+        <div class="button-name">Le'Ball</div>
+        <span id="basketball-price" class="button-price"></span>
+        <span id="basketball-quantity" class="button-quantity"></span>
+    </button>
+    <button class="farm-button" id="farm-button">
+        <div class="button-name">Le'Farm</div>
+        <span id="farm-price" class="button-price"></span>
+        <span id="farm-quantity" class="button-quantity"></span>
+    </button>
+    <button class="mine-button" id="mine-button">
+        <div class="button-name">Le'Mine</div>
+        <span id="mine-price" class="button-price"></span>
+        <span id="mine-quantity" class="button-quantity"></span>
+    </button>
+    <button class="factory-button" id="factory-button">
+        <div class="button-name">Le'Factory</div>
+        <span id="factory-price" class="button-price"></span>
+        <span id="factory-quantity" class="button-quantity"></span>
+    </button>
+    <button class="bank-button" id="bank-button">
+        <div class="button-name">Le'Bank</div>
+        <span id="bank-price" class="button-price"></span>
+        <span id="bank-quantity" class="button-quantity"></span>
+    </button>
+    <button class="temple-button" id="temple-button">
+        <div class="button-name">Le'Temple</div>
+        <span id="temple-price" class="button-price"></span>
+        <span id="temple-quantity" class="button-quantity"></span>
+    </button>
+    <button class="wizard-button" id="wizard-button">
+        <div class="button-name">Le'Wizard</div>
+        <span id="wizard-price" class="button-price"></span>
+        <span id="wizard-quantity" class="button-quantity"></span>
+    </button>
+    <button class="shipment-button" id="shipment-button">
+        <div class="button-name">Le'Shipment</div>
+        <span id="shipment-price" class="button-price"></span>
+        <span id="shipment-quantity" class="button-quantity"></span>
+    </button>
+    <button class="alchemy-button" id="alchemy-button">
+        <div class="button-name">Le'Alchemy</div>
+        <span id="alchemy-price" class="button-price"></span>
+        <span id="alchemy-quantity" class="button-quantity"></span>
+    </button>
+    <button class="portal-button" id="portal-button">
+        <div class="button-name">Le'Portal</div>
+        <span id="portal-price" class="button-price"></span>
+        <span id="portal-quantity" class="button-quantity"></span>
+    </button>
+    <button class="timemachine-button" id="timemachine-button">
+        <div class="button-name">Le'Timemachine</div>
+        <span id="timemachine-price" class="button-price"></span>
+        <span id="timemachine-quantity" class="button-quantity"></span>
+    </button>
+    <button class="condenser-button" id="condenser-button">
+        <div class="button-name">Le'Condenser</div>
+        <span id="condenser-price" class="button-price"></span>
+        <span id="condenser-quantity" class="button-quantity"></span>
+    </button>
+    <button class="prism-button" id="prism-button">
+        <div class="button-name">Le'Prism</div>
+        <span id="prism-price" class="button-price"></span>
+        <span id="prism-quantity" class="button-quantity"></span>
+    </button>
+    </div>
+
+    <div class="upgrades-section">
+        <h1>Upgrades</h1>
+    </div>
+    <script src="./scripts/gameManager.js"></script>
 </body>
 </html>
