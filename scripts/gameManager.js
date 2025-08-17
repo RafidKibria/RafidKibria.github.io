@@ -119,6 +119,16 @@ class Building {
     }
 }
 
+class Upgrade {
+    constructor(name, price, level, effect) {
+        this._name = name;
+        this._price = price;
+        this._level = level;
+        this._effect = effect;
+        this._button = document.getElementById(`${this._name}-upgrade`)
+    }
+}
+
 cursorBuilding = new Building("cursor", 15, 0.1, "Hand of Lebron");
 basketballBuilding = new Building("basketball", 100, 1, "His Power");
 farmBuilding = new Building("farm", 1100, 8, "Le'seeds are grown here");
