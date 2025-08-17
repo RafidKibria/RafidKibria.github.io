@@ -158,3 +158,20 @@ body {
     color: rgb(74, 0, 192);
     font-size: 20px;
 }
+
+.building-popup {
+    position: fixed;
+    z-index: 1000;
+    min-width: 200px;
+    max-width: 300px;
+    background: #2d1a4d;
+    color: #fff;
+    border: 2px solid #b27be0;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    pointer-events: auto;
+    transition: opacity 0.2s;
+    font-family: "Michroma";
+    font-size: 12px;
+}
