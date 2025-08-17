@@ -166,11 +166,47 @@ buildings.forEach((building) => {
     })
 })
 
+function pointPopup() {
+    // Create point popup
+    const popup = document.createElement("span");
+    popup.className = "point-popup";
+    popup.textContent = `+${normalizeNumber(game.clickingPower)}`;
 
+    // Get clicker image size and position
+    const parent = clickerImage.parentElement;
+    parent.style.position = "relative";
+    const imgRect = clickerImage.getBoundingClientRect();
+    const parentRect = parent.getBoundingClientRect();
 
-clickerImage.addEventListener("click", () => {
+    // Generate a random angle and distance for the popup around the image
+    const angle = Math.random() * 2 * Math.PI;
+    const radius = (imgRect.width / 2) * (0.7 + Math.random() * 0.3); // 70%-100% of radius
+    const centerX = imgRect.left + imgRect.width / 2 - parentRect.left;
+    const centerY = imgRect.top + imgRect.height / 2 - parentRect.top;
+    const offsetX = Math.cos(angle) * radius;
+    const offsetY = Math.sin(angle) * radius;
+
+    // Set popup position
+    popup.style.left = `${centerX + offsetX}px`;
+    popup.style.top = `${centerY + offsetY}px`;
+    popup.style.transform = "translate(-50%, -50%) scale(1)";
+
+    parent.appendChild(popup);
+
+    // Remove popup after animation
+    setTimeout(() => {
+        popup.remove();
+    }, 700);
+}
+
+clickerImage.addEventListener("click", (e) => {
     game.coins += game.clickingPower;
-})
+    clickerImage.classList.add("clicked");
+    setTimeout(() => {
+        clickerImage.classList.remove("clicked");
+    }, 120);
+    pointPopup();
+});
 
 let lastTimestamp = performance.now();
 let coinRemainder = 0;
@@ -200,13 +236,13 @@ buildings.forEach((building) => {
             Price: $${normalizeNumber(building.price)}<br>
             Production: ${normalizeNumber(building.productionRate)}/sec<br>
             Owned: ${building.quantity}
-            <br><em style="font-size: 7px;">'${building.buildingDescription}'</em>
+            <br><em style="font-size: 10px;">'${building.buildingDescription}'</em>
         `;
 
         // Get button position
         const rect = building.button.getBoundingClientRect();
         // Position popup to the left of the button, vertically centered
-        popup.style.top = `${rect.top - 20}px`;
+        popup.style.top = `${rect.top - 50}px`;
         popup.style.left = `${rect.left - popup.offsetWidth - 250}px`;
         popup.style.display = "block";
     });

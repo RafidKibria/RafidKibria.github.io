@@ -1,11 +1,48 @@
+.point-popup {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    font-family: "Michroma", sans-serif;
+    font-size: 24px;
+    color: #fff700;
+    text-shadow: 1px 1px 8px #000, 0 0 8px #fff;
+    pointer-events: none;
+    opacity: 1;
+    z-index: 1001;
+    animation: point-pop 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes point-pop {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    70% {
+        opacity: 1;
+        transform: translate(-50%, -80%) scale(1.2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -120%) scale(0.8);
+    }
+}
+
 body {
     background-image: url(../purple-background-wallpaperaccess.png);
     background-size: cover;
 }
 
 .clicker-image-div img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
+    transition: transform 0.12s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clicker-image-div img.clicked {
+    transform: scale(0.85);
 }
 
 .clicker-image-div p {
@@ -16,6 +53,7 @@ body {
     font-family: "Michroma", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 20px;
 }
 
 .shop-section {
@@ -173,5 +211,5 @@ body {
     pointer-events: auto;
     transition: opacity 0.2s;
     font-family: "Michroma";
-    font-size: 12px;
+    font-size: 16px;
 }
